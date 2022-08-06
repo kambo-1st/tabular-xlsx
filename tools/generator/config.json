@@ -1,0 +1,19 @@
+{
+    "seed": 1234,
+    "format": "xslx",
+    "rows": 1000000,
+    "columns": 8,
+    "types": [
+        "id",
+        "firstName",
+        "lastName",
+        "name",
+        "title",
+        "email",
+        "dateTime",
+        "text"
+    ],
+    "monitor": true,
+    "collectTime": true,
+    "collectMemory": true
+}

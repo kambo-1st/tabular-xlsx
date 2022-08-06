@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+foreach ([__DIR__ . '/../../../../autoload.php', __DIR__ . '/../../../vendor/autoload.php'] as $file) {
+    if (file_exists($file)) {
+        require $file;
+
+        break;
+    }
+}
+
+use Symfony\Component\Console\Application;
+use Kambo\Tabular\Tools\Generator\GeneratorCommand;
+
+$application = new Application();
+$application->add(new GeneratorCommand());
+
+$application->run();
